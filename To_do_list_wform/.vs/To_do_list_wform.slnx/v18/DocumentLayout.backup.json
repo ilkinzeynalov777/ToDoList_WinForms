@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To_do_list_wform\\",
+  "WorkspaceRootPath": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|c:\\users\\ilkin.zeynalov\\source\\repos\\to_do_list_wform\\to_do_list_wform\\taskcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\to_do_list_wform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|solutionrelative:to_do_list_wform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|c:\\users\\ilkin.zeynalov\\desktop\\new folder\\todolist_winforms\\to_do_list_wform\\to_do_list_wform\\taskcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|solutionrelative:to_do_list_wform\\taskcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|c:\\users\\ilkin.zeynalov\\source\\repos\\to_do_list_wform\\to_do_list_wform\\taskcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|solutionrelative:to_do_list_wform\\taskcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|c:\\users\\ilkin.zeynalov\\desktop\\new folder\\todolist_winforms\\to_do_list_wform\\to_do_list_wform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|solutionrelative:to_do_list_wform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|c:\\users\\ilkin.zeynalov\\source\\repos\\to_do_list_wform\\to_do_list_wform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|solutionrelative:to_do_list_wform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|c:\\users\\ilkin.zeynalov\\desktop\\new folder\\todolist_winforms\\to_do_list_wform\\to_do_list_wform\\taskcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|solutionrelative:to_do_list_wform\\taskcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|c:\\users\\ilkin.zeynalov\\desktop\\new folder\\todolist_winforms\\to_do_list_wform\\to_do_list_wform\\taskcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F3D604B-1152-F6E5-2388-4DB4E12000A7}|To_do_list_wform\\To_do_list_wform.csproj|solutionrelative:to_do_list_wform\\taskcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,40 +30,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "TaskCard.cs",
-              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To_do_list_wform\\To_do_list_wform\\TaskCard.cs",
+              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\TaskCard.cs",
               "RelativeDocumentMoniker": "To_do_list_wform\\TaskCard.cs",
-              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To_do_list_wform\\To_do_list_wform\\TaskCard.cs*",
-              "RelativeToolTip": "To_do_list_wform\\TaskCard.cs*",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAEwCIAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\TaskCard.cs",
+              "RelativeToolTip": "To_do_list_wform\\TaskCard.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAIA7wEAAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-12T08:34:08.265Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskCard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\TaskCard.cs",
+              "RelativeDocumentMoniker": "To_do_list_wform\\TaskCard.cs",
+              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\TaskCard.cs [Design]",
+              "RelativeToolTip": "To_do_list_wform\\TaskCard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T12:34:31.38Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskCard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\TaskCard.Designer.cs",
+              "RelativeDocumentMoniker": "To_do_list_wform\\TaskCard.Designer.cs",
+              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\TaskCard.Designer.cs",
+              "RelativeToolTip": "To_do_list_wform\\TaskCard.Designer.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAArwDMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T10:36:53.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\Form1.cs",
+              "RelativeDocumentMoniker": "To_do_list_wform\\Form1.cs",
+              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\Form1.cs*",
+              "RelativeToolTip": "To_do_list_wform\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T08:51:26.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TaskCard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To_do_list_wform\\To_do_list_wform\\TaskCard.cs",
-              "RelativeDocumentMoniker": "To_do_list_wform\\TaskCard.cs",
-              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To_do_list_wform\\To_do_list_wform\\TaskCard.cs [Design]*",
-              "RelativeToolTip": "To_do_list_wform\\TaskCard.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T08:14:13.054Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To_do_list_wform\\To_do_list_wform\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\Form1.cs",
               "RelativeDocumentMoniker": "To_do_list_wform\\Form1.cs",
-              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To_do_list_wform\\To_do_list_wform\\Form1.cs [Design]*",
+              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\Form1.cs [Design]*",
               "RelativeToolTip": "To_do_list_wform\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-10T13:12:34.688Z",

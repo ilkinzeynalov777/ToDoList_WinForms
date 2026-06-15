@@ -33,92 +33,108 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskCard));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            cardMain = new Guna.UI2.WinForms.Guna2Panel();
+            taskDesc = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            delete = new Guna.UI2.WinForms.Guna2Button();
+            usernameText = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            finishDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            finalDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            taskStatus = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            guna2Panel1.SuspendLayout();
+            cardMain.SuspendLayout();
             SuspendLayout();
             // 
-            // guna2Panel1
+            // cardMain
             // 
-            guna2Panel1.BackColor = Color.Black;
-            guna2Panel1.BorderRadius = 15;
-            guna2Panel1.Controls.Add(guna2Button2);
-            guna2Panel1.Controls.Add(guna2HtmlLabel5);
-            guna2Panel1.Controls.Add(guna2HtmlLabel4);
-            guna2Panel1.Controls.Add(guna2HtmlLabel3);
-            guna2Panel1.Controls.Add(guna2HtmlLabel2);
-            guna2Panel1.Controls.Add(guna2HtmlLabel1);
-            guna2Panel1.Controls.Add(guna2CheckBox1);
-            guna2Panel1.CustomizableEdges = customizableEdges3;
-            guna2Panel1.FillColor = Color.Black;
-            guna2Panel1.ForeColor = Color.White;
-            guna2Panel1.Location = new Point(3, 3);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Panel1.Size = new Size(813, 53);
-            guna2Panel1.TabIndex = 0;
-            guna2Panel1.Click += guna2Panel1_Click;
-            guna2Panel1.Paint += guna2Panel1_Paint;
-            guna2Panel1.MouseEnter += guna2Panel1_MouseEnter;
-            guna2Panel1.MouseLeave += guna2Panel1_MouseLeave;
+            cardMain.BackColor = Color.Black;
+            cardMain.BorderRadius = 10;
+            cardMain.Controls.Add(taskDesc);
+            cardMain.Controls.Add(delete);
+            cardMain.Controls.Add(usernameText);
+            cardMain.Controls.Add(finishDate);
+            cardMain.Controls.Add(finalDate);
+            cardMain.Controls.Add(guna2HtmlLabel2);
+            cardMain.Controls.Add(taskStatus);
+            cardMain.Controls.Add(guna2CheckBox1);
+            cardMain.CustomizableEdges = customizableEdges3;
+            cardMain.FillColor = Color.Black;
+            cardMain.ForeColor = Color.White;
+            cardMain.Location = new Point(3, 3);
+            cardMain.Name = "cardMain";
+            cardMain.ShadowDecoration.BorderRadius = 15;
+            cardMain.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            cardMain.Size = new Size(948, 60);
+            cardMain.TabIndex = 0;
+            cardMain.Click += guna2Panel1_Click;
+            cardMain.Paint += guna2Panel1_Paint;
+            cardMain.MouseEnter += guna2Panel1_MouseEnter;
+            cardMain.MouseLeave += guna2Panel1_MouseLeave;
             // 
-            // guna2Button2
+            // taskDesc
             // 
-            guna2Button2.BorderRadius = 20;
-            guna2Button2.CustomizableEdges = customizableEdges1;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.Transparent;
-            guna2Button2.Font = new Font("Segoe UI", 9F);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Image = (Image)resources.GetObject("guna2Button2.Image");
-            guna2Button2.ImageSize = new Size(25, 25);
-            guna2Button2.Location = new Point(753, 0);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button2.Size = new Size(48, 52);
-            guna2Button2.TabIndex = 1;
+            taskDesc.Anchor = AnchorStyles.None;
+            taskDesc.BackColor = Color.Transparent;
+            taskDesc.ForeColor = SystemColors.ButtonHighlight;
+            taskDesc.Location = new Point(271, 18);
+            taskDesc.Name = "taskDesc";
+            taskDesc.Size = new Size(107, 17);
+            taskDesc.TabIndex = 7;
+            taskDesc.Text = "Learn User Control1";
+            taskDesc.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // guna2HtmlLabel5
+            // delete
             // 
-            guna2HtmlLabel5.Anchor = AnchorStyles.None;
-            guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.ForeColor = SystemColors.ButtonHighlight;
-            guna2HtmlLabel5.Location = new Point(67, 15);
-            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(101, 17);
-            guna2HtmlLabel5.TabIndex = 6;
-            guna2HtmlLabel5.Text = "Learn User Control";
-            guna2HtmlLabel5.TextAlignment = ContentAlignment.MiddleCenter;
-            guna2HtmlLabel5.Click += guna2HtmlLabel5_Click;
+            delete.BorderRadius = 20;
+            delete.CustomizableEdges = customizableEdges1;
+            delete.DisabledState.BorderColor = Color.DarkGray;
+            delete.DisabledState.CustomBorderColor = Color.DarkGray;
+            delete.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            delete.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            delete.FillColor = Color.Transparent;
+            delete.Font = new Font("Segoe UI", 9F);
+            delete.ForeColor = Color.White;
+            delete.Image = (Image)resources.GetObject("delete.Image");
+            delete.ImageSize = new Size(25, 25);
+            delete.Location = new Point(823, 5);
+            delete.Name = "delete";
+            delete.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            delete.Size = new Size(48, 52);
+            delete.TabIndex = 1;
+            delete.Click += guna2Button2_Click;
             // 
-            // guna2HtmlLabel4
+            // usernameText
             // 
-            guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.ForeColor = SystemColors.ButtonHighlight;
-            guna2HtmlLabel4.Location = new Point(260, 15);
-            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(61, 17);
-            guna2HtmlLabel4.TabIndex = 5;
-            guna2HtmlLabel4.Text = "21-10-2025";
+            usernameText.Anchor = AnchorStyles.None;
+            usernameText.BackColor = Color.Transparent;
+            usernameText.ForeColor = SystemColors.ButtonHighlight;
+            usernameText.Location = new Point(80, 18);
+            usernameText.Name = "usernameText";
+            usernameText.Size = new Size(101, 17);
+            usernameText.TabIndex = 6;
+            usernameText.Text = "Learn User Control";
+            usernameText.TextAlignment = ContentAlignment.MiddleCenter;
+            usernameText.Click += guna2HtmlLabel5_Click;
             // 
-            // guna2HtmlLabel3
+            // finishDate
             // 
-            guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.ForeColor = SystemColors.ButtonHighlight;
-            guna2HtmlLabel3.Location = new Point(465, 15);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(61, 17);
-            guna2HtmlLabel3.TabIndex = 4;
-            guna2HtmlLabel3.Text = "29-11-2025";
+            finishDate.BackColor = Color.Transparent;
+            finishDate.ForeColor = SystemColors.ButtonHighlight;
+            finishDate.Location = new Point(467, 18);
+            finishDate.Name = "finishDate";
+            finishDate.Size = new Size(61, 17);
+            finishDate.TabIndex = 5;
+            finishDate.Text = "21-10-2025";
+            // 
+            // finalDate
+            // 
+            finalDate.BackColor = Color.Transparent;
+            finalDate.ForeColor = SystemColors.ButtonHighlight;
+            finalDate.Location = new Point(593, 18);
+            finalDate.Name = "finalDate";
+            finalDate.Size = new Size(61, 17);
+            finalDate.TabIndex = 4;
+            finalDate.Text = "29-11-2025";
             // 
             // guna2HtmlLabel2
             // 
@@ -130,15 +146,15 @@
             guna2HtmlLabel2.TabIndex = 3;
             guna2HtmlLabel2.Text = null;
             // 
-            // guna2HtmlLabel1
+            // taskStatus
             // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.ForeColor = SystemColors.ButtonHighlight;
-            guna2HtmlLabel1.Location = new Point(648, 15);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(56, 17);
-            guna2HtmlLabel1.TabIndex = 2;
-            guna2HtmlLabel1.Text = "Pending...";
+            taskStatus.BackColor = Color.Transparent;
+            taskStatus.ForeColor = SystemColors.ButtonHighlight;
+            taskStatus.Location = new Point(727, 18);
+            taskStatus.Name = "taskStatus";
+            taskStatus.Size = new Size(56, 17);
+            taskStatus.TabIndex = 2;
+            taskStatus.Text = "Pending...";
             // 
             // guna2CheckBox1
             // 
@@ -160,23 +176,25 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(guna2Panel1);
+            Controls.Add(cardMain);
             Name = "TaskCard";
-            Size = new Size(915, 561);
-            guna2Panel1.ResumeLayout(false);
-            guna2Panel1.PerformLayout();
+            Size = new Size(948, 67);
+            Load += TaskCard_Load;
+            cardMain.ResumeLayout(false);
+            cardMain.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel cardMain;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel usernameText;
+        private Guna.UI2.WinForms.Guna2HtmlLabel finishDate;
+        private Guna.UI2.WinForms.Guna2HtmlLabel finalDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel taskStatus;
+        private Guna.UI2.WinForms.Guna2Button delete;
+        private Guna.UI2.WinForms.Guna2HtmlLabel taskDesc;
     }
 }

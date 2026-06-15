@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAF0RJREFUeF7t3Ynf7nVd53EPh8UUVATXcVwYihFRQMUFc2FkUHMbFTJRMy3McnQo
+        DAAACwwBP0AiyAAAF0RJREFUeF7t3Ynf7nVd53EPh8UUVATXcVwYihFRQMUFc2FkUHMbFTJRMy3McnQo
         M0GtCHMiTTMcF7IwFXUkG0rBNZeyTAY1SQc30tHcDRcMBGTp/bu+n3nIGY6He7mW3/J8Ph6fP4D7fF/v
         6+bAuc91AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuLqrrrpq59ytcwfn7pU7InfUyK77Z+r+2bp/xu6f
