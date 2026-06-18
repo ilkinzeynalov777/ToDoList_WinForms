@@ -27,6 +27,16 @@ namespace To_do_list_wform
 
         }
 
+        public string TaskDate()
+        {
+            get { return finishDate.Text; }
+            set { finishDate.Text = value; }
+
+        }
+
+        //START DATE TARIXI GIRMEK
+
+
         private void guna2HtmlLabel5_Click(object sender, EventArgs e)
         {
 
@@ -57,14 +67,35 @@ namespace To_do_list_wform
 
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void TaskCard_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void taskDesc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls.Remove(this);
+        }
+
+        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(guna2CheckBox1.Checked)
+            {
+                taskStatus.Text = "Completed";
+                taskStatus.ForeColor = Color.Green;
+            }
+            else
+            {
+                taskStatus.Text = "Pending";
+                taskStatus.ForeColor = Color.Red;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("To_do_list_wform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd5ffa06af4b06988363cb794cd21093b0643be9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+696a332380e1d1fd5775fa796e3b6dee0af1a16f")]
 [assembly: System.Reflection.AssemblyProductAttribute("To_do_list_wform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("To_do_list_wform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

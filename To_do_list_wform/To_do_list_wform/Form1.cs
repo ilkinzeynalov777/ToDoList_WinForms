@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace To_do_list_wform
 {
     public partial class Form1 : Form
@@ -14,13 +16,24 @@ namespace To_do_list_wform
                 MessageBox.Show("Zehmet olmasa tapşırığı əlavə edin.");
                 return;
             }
-            else
+
+            string taskFull = richTextBox1.Text;
+            string shortTask = taskFull;
+
+            if(taskFull.Length > 20)
             {
-                string task = richTextBox1.Text;
-                TaskCard taskCard = new TaskCard();
-                taskCard.TaskDesc = task;
-                flowPanel.Controls.Add(taskCard);
+                shortTask = taskFull.Substring(0, 20) + "...";
             }
+
+            TaskCard taskCard = new TaskCard();
+            taskCard.TaskDesc = shortTask;
+            flowPanel.Controls.Add(taskCard);
+            richTextBox1.Clear();   
+            
+            
+
+
+
 
         }
 

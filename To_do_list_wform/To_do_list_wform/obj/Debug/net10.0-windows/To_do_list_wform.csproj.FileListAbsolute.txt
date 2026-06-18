@@ -45,3 +45,27 @@ C:\Users\ILKIN.ZEYNALOV\Desktop\New folder\ToDoList_WinForms\To_do_list_wform\To
 C:\Users\ILKIN.ZEYNALOV\Desktop\New folder\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.pdb
 C:\Users\ILKIN.ZEYNALOV\Desktop\New folder\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.genruntimeconfig.cache
 C:\Users\ILKIN.ZEYNALOV\Desktop\New folder\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\ref\To_do_list_wform.dll
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\bin\Debug\net10.0-windows\To_do_list_wform.exe
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\bin\Debug\net10.0-windows\To_do_list_wform.deps.json
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\bin\Debug\net10.0-windows\To_do_list_wform.runtimeconfig.json
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\bin\Debug\net10.0-windows\To_do_list_wform.dll
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\bin\Debug\net10.0-windows\To_do_list_wform.pdb
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\bin\Debug\net10.0-windows\Guna.UI2.dll
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\bin\Debug\net10.0-windows\System.Management.dll
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\bin\Debug\net10.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.csproj.AssemblyReference.cache
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.Form1.resources
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.Properties.Resources.resources
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.TaskCard.resources
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.csproj.GenerateResource.cache
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.AssemblyInfoInputs.cache
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.AssemblyInfo.cs
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.csproj.CoreCompileInputs.cache
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.sourcelink.json
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_li.A8BA1B61.Up2Date
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.dll
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\refint\To_do_list_wform.dll
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.pdb
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.genruntimeconfig.cache
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\ref\To_do_list_wform.dll

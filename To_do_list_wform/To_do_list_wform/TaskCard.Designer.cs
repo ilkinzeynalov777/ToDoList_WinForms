@@ -64,7 +64,7 @@
             cardMain.Name = "cardMain";
             cardMain.ShadowDecoration.BorderRadius = 15;
             cardMain.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            cardMain.Size = new Size(948, 60);
+            cardMain.Size = new Size(942, 60);
             cardMain.TabIndex = 0;
             cardMain.Click += guna2Panel1_Click;
             cardMain.Paint += guna2Panel1_Paint;
@@ -76,15 +76,17 @@
             taskDesc.Anchor = AnchorStyles.None;
             taskDesc.BackColor = Color.Transparent;
             taskDesc.ForeColor = SystemColors.ButtonHighlight;
-            taskDesc.Location = new Point(271, 18);
+            taskDesc.Location = new Point(268, 18);
             taskDesc.Name = "taskDesc";
             taskDesc.Size = new Size(107, 17);
             taskDesc.TabIndex = 7;
             taskDesc.Text = "Learn User Control1";
             taskDesc.TextAlignment = ContentAlignment.MiddleCenter;
+            taskDesc.Click += taskDesc_Click;
             // 
             // delete
             // 
+            delete.BackColor = Color.Transparent;
             delete.BorderRadius = 20;
             delete.CustomizableEdges = customizableEdges1;
             delete.DisabledState.BorderColor = Color.DarkGray;
@@ -101,14 +103,14 @@
             delete.ShadowDecoration.CustomizableEdges = customizableEdges2;
             delete.Size = new Size(48, 52);
             delete.TabIndex = 1;
-            delete.Click += guna2Button2_Click;
+            delete.Click += delete_Click;
             // 
             // usernameText
             // 
             usernameText.Anchor = AnchorStyles.None;
             usernameText.BackColor = Color.Transparent;
             usernameText.ForeColor = SystemColors.ButtonHighlight;
-            usernameText.Location = new Point(80, 18);
+            usernameText.Location = new Point(77, 18);
             usernameText.Name = "usernameText";
             usernameText.Size = new Size(101, 17);
             usernameText.TabIndex = 6;
@@ -171,6 +173,7 @@
             guna2CheckBox1.UncheckedState.BorderRadius = 3;
             guna2CheckBox1.UncheckedState.BorderThickness = 2;
             guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(34, 32, 42);
+            guna2CheckBox1.CheckedChanged += guna2CheckBox1_CheckedChanged;
             // 
             // TaskCard
             // 

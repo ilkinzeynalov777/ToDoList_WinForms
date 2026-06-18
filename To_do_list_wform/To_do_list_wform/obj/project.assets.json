@@ -104,11 +104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
+      "projectUniqueName": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
       "projectName": "To_do_list_wform",
-      "projectPath": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
+      "projectPath": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
       "packagesPath": "C:\\Users\\ILKIN.ZEYNALOV\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\New folder\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\obj\\",
+      "outputPath": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ILKIN.ZEYNALOV\\AppData\\Roaming\\NuGet\\NuGet.Config",
