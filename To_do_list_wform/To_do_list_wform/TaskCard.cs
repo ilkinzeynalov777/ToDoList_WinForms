@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,13 +12,7 @@ namespace To_do_list_wform
 {
     public partial class TaskCard : UserControl
     {
-
-        public string TaskDesc
-        {
-            get { return taskDesc.Text; }
-            set { taskDesc.Text = value; }
-
-        }
+        private object guna2;
 
         public TaskCard()
         {
@@ -27,12 +22,7 @@ namespace To_do_list_wform
 
         }
 
-        public string TaskDate()
-        {
-            get { return finishDate.Text; }
-            set { finishDate.Text = value; }
 
-        }
 
         //START DATE TARIXI GIRMEK
 
@@ -74,7 +64,7 @@ namespace To_do_list_wform
 
         }
 
-        private void taskDesc_Click(object sender, EventArgs e)
+        public void taskDesc_Click(object sender, EventArgs e)
         {
 
         }
@@ -86,16 +76,69 @@ namespace To_do_list_wform
 
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(guna2CheckBox1.Checked)
+
+            Guna.UI2.WinForms.Guna2CheckBox clickedCheckBox = (Guna.UI2.WinForms.Guna2CheckBox)sender;
+            var panel = clickedCheckBox.Parent;
+            To_do_list_wform.TaskCard taskCard = panel.Parent as To_do_list_wform.TaskCard;
+
+            if (taskCard != null)
             {
-                taskStatus.Text = "Completed";
-                taskStatus.ForeColor = Color.Green;
+                if (guna2CheckBox1.Checked == true)
+                {
+                    taskStatus.Text = "Completed";
+                    taskStatus.ForeColor = Color.Green;
+                    taskCard.finalDate.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+                }
+                else
+                {
+                    taskStatus.Text = "Pending";
+                    taskStatus.ForeColor = Color.Red;
+                    taskCard.finalDate.Text = DateTime.Now.ToString("--/--/---- --:--");
+                }
             }
-            else
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            //editArea editShow = new editArea();
+            //editShow.Show();
+
+            // 1. Redaktə pəncərəsini yaradırıq
+            editArea editForm = new editArea();
+
+            //istifadəçinin daxil etdiyi dəyəri açılan sahəyə mənimsədirik
+            //burdan davam ederəm evden
+
+
+
+            // Properties ayarlarını kod daxilində dəqiqləşdiririk
+            editForm.StartPosition = FormStartPosition.Manual;
+            editForm.FormBorderStyle = FormBorderStyle.None;
+
+            // 2. Kartın ekran üzərindəki sol-üst küncünün real koordinatını tapırıq
+            Point cardLocation = this.PointToScreen(Point.Empty);
+
+            // 💡 KALİBRASİYA: Windows-un pəncərə çərçivələrindən qaynaqlanan sürüşməni düzəldirik
+            // En və hündürlük fərqlərini aradan qaldırmaq üçün kiçik piksel əlavələri edirik
+            int xCorrection = cardLocation.X + 2;
+            int yCorrection = cardLocation.Y + 2;
+
+            // 3. Düzəliş edilmiş koordinatları formaya mənimsədirik
+            editForm.Location = new Point(xCorrection, yCorrection);
+
+            // 4. Ölçüləri tam olaraq kartın daxili ölçüsü (ClientSize) qədər edirik ki, kənara çıxmasın
+            editForm.Width = this.ClientSize.Width - 4;
+            editForm.Height = this.ClientSize.Height - 4;
+
+            // 5. Pəncərəni açırıq
+            if (editForm.ShowDialog() == DialogResult.OK)
             {
-                taskStatus.Text = "Pending";
-                taskStatus.ForeColor = Color.Red;
+                editForm.guna2TextBox1.Text = editForm.guna2TextBox1.Text;
             }
+
+
+
         }
     }
 }
+

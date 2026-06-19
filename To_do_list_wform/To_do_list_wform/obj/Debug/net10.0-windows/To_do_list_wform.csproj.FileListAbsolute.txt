@@ -69,3 +69,4 @@ C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wf
 C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.pdb
 C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.genruntimeconfig.cache
 C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\ref\To_do_list_wform.dll
+C:\Users\ILKIN.ZEYNALOV\Desktop\ToDoList_WinForms\To_do_list_wform\To_do_list_wform\obj\Debug\net10.0-windows\To_do_list_wform.editArea.resources

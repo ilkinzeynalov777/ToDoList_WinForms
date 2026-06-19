@@ -26,11 +26,14 @@ namespace To_do_list_wform
             }
 
             TaskCard taskCard = new TaskCard();
-            taskCard.TaskDesc = shortTask;
+            taskCard.taskDesc.Text = shortTask;
             flowPanel.Controls.Add(taskCard);
             richTextBox1.Clear();   
             
             
+            DateTime nowDate = DateTime.Now;
+            taskCard.finishDate.Text = nowDate.ToString("dd/MM/yyyy HH:mm");
+
 
 
 

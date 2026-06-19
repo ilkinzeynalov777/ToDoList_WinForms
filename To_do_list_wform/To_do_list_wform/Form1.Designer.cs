@@ -46,10 +46,12 @@
             // flowPanel
             // 
             flowPanel.AutoScroll = true;
+            flowPanel.FlowDirection = FlowDirection.TopDown;
             flowPanel.Location = new Point(15, 125);
             flowPanel.Name = "flowPanel";
-            flowPanel.Size = new Size(961, 524);
+            flowPanel.Size = new Size(948, 524);
             flowPanel.TabIndex = 1;
+            flowPanel.WrapContents = false;
             // 
             // button1
             // 
@@ -59,7 +61,7 @@
             button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(834, 12);
             button1.Name = "button1";
-            button1.Size = new Size(142, 45);
+            button1.Size = new Size(129, 45);
             button1.TabIndex = 2;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = false;
@@ -118,7 +120,7 @@
             guna2Panel1.Location = new Point(15, 63);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel1.Size = new Size(961, 56);
+            guna2Panel1.Size = new Size(948, 56);
             guna2Panel1.TabIndex = 6;
             // 
             // label6
@@ -156,7 +158,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlText;
-            ClientSize = new Size(988, 661);
+            ClientSize = new Size(974, 661);
             Controls.Add(richTextBox1);
             Controls.Add(guna2Panel1);
             Controls.Add(button1);
