@@ -101,30 +101,45 @@ namespace To_do_list_wform
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            // Open the edit form and pass this TaskCard as the current task
-            editArea editForm = new editArea(this);
-            editForm.CurrentTask = this;
-            editForm.guna2TextBox1.Text = this.RealTaskText;
+            //editArea editShow = new editArea();
+            //editShow.Show();
 
-            // Properties
+            // 1. Redaktə pəncərəsini yaradırıq
+            editArea editForm = new editArea();
+            editForm.guna2TextBox1.Text = this.RealTaskText;
+            //istifadəçinin daxil etdiyi dəyəri açılan sahəyə mənimsədirik
+
+
+
+
+            // Properties ayarlarını kod daxilində dəqiqləşdiririk
             editForm.StartPosition = FormStartPosition.Manual;
             editForm.FormBorderStyle = FormBorderStyle.None;
 
-            // Position the form over the card
+           
+
+
+            // 2. Kartın ekran üzərindəki sol-üst küncünün real koordinatını tapırıq
             Point cardLocation = this.PointToScreen(Point.Empty);
+
+            // 💡 KALİBRASİYA: Windows-un pəncərə çərçivələrindən qaynaqlanan sürüşməni düzəldirik
+            // En və hündürlük fərqlərini aradan qaldırmaq üçün kiçik piksel əlavələri edirik
             int xCorrection = cardLocation.X + 2;
             int yCorrection = cardLocation.Y + 2;
+
+            // 3. Düzəliş edilmiş koordinatları formaya mənimsədirik
             editForm.Location = new Point(xCorrection, yCorrection);
 
+            // 4. Ölçüləri tam olaraq kartın daxili ölçüsü (ClientSize) qədər edirik ki, kənara çıxmasın
             editForm.Width = this.ClientSize.Width - 4;
             editForm.Height = this.ClientSize.Height - 4;
 
-            // If the user saved changes, update this card's text
+            // 5. Pəncərəni açırıq
             if (editForm.ShowDialog() == DialogResult.OK)
             {
-                this.RealTaskText = editForm.guna2TextBox1.Text;
-                this.taskDesc.Text = this.RealTaskText;
+                editForm.guna2TextBox1.Text = this.RealTaskText;
             }
+
 
 
         }

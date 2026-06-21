@@ -60,18 +60,20 @@
             // guna2ImageButton1
             // 
             guna2ImageButton1.CheckedState.ImageSize = new Size(64, 64);
-            guna2ImageButton1.HoverState.ImageSize = new Size(64, 64);
+            guna2ImageButton1.HoverState.ImageSize = new Size(48, 45);
             guna2ImageButton1.Image = (Image)resources.GetObject("guna2ImageButton1.Image");
             guna2ImageButton1.ImageOffset = new Point(0, 0);
             guna2ImageButton1.ImageRotate = 0F;
-            guna2ImageButton1.ImageSize = new Size(50, 50);
-            guna2ImageButton1.Location = new Point(772, 3);
+            guna2ImageButton1.ImageSize = new Size(48, 45);
+            guna2ImageButton1.Location = new Point(772, 12);
             guna2ImageButton1.Name = "guna2ImageButton1";
             guna2ImageButton1.PressedState.ImageSize = new Size(64, 64);
             guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            guna2ImageButton1.Size = new Size(74, 73);
+            guna2ImageButton1.Size = new Size(48, 45);
             guna2ImageButton1.TabIndex = 1;
             guna2ImageButton1.Click += guna2ImageButton1_Click;
+            guna2ImageButton1.MouseClick += guna2ImageButton1_MouseClick;
+            guna2ImageButton1.MouseHover += guna2ImageButton1_MouseHover;
             // 
             // guna2TextBox1
             // 
@@ -85,14 +87,16 @@
             guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Font = new Font("Segoe UI", 9F);
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(-95, 3);
+            guna2TextBox1.Location = new Point(12, 3);
+            guna2TextBox1.Multiline = true;
             guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.Padding = new Padding(2);
             guna2TextBox1.PlaceholderText = "";
+            guna2TextBox1.ScrollBars = ScrollBars.Both;
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            guna2TextBox1.Size = new Size(870, 70);
+            guna2TextBox1.Size = new Size(754, 61);
             guna2TextBox1.TabIndex = 0;
+            guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;
             // 
             // editArea
             // 
@@ -103,6 +107,8 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "editArea";
             Text = "editArea";
+            Load += editArea_Load;
+            KeyDown += editArea_KeyDown_1;
             editMain.ResumeLayout(false);
             ResumeLayout(false);
         }

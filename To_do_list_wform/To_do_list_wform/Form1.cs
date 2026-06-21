@@ -1,9 +1,14 @@
+using System.ComponentModel;
 using System.Security.Cryptography.X509Certificates;
 
 namespace To_do_list_wform
 {
     public partial class Form1 : Form
     {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public string TaskFull { get; set; }
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -17,15 +22,18 @@ namespace To_do_list_wform
                 return;
             }
 
-            string taskFull = richTextBox1.Text;
-            string shortTask = taskFull;
+            TaskCard taskCard = new TaskCard();
 
-            if(taskFull.Length > 20)
+            taskCard.RealTaskText = richTextBox1.Text;
+            TaskFull = richTextBox1.Text;
+            string shortTask = TaskFull;
+
+            if(TaskFull.Length > 20)
             {
-                shortTask = taskFull.Substring(0, 20) + "...";
+                shortTask = TaskFull.Substring(0, 20) + "...";
             }
 
-            TaskCard taskCard = new TaskCard();
+            
             taskCard.taskDesc.Text = shortTask;
             flowPanel.Controls.Add(taskCard);
             richTextBox1.Clear();   

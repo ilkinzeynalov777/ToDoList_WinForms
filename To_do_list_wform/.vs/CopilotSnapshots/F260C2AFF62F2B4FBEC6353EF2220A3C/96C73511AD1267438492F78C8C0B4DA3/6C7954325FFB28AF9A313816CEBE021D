@@ -12,13 +12,10 @@ namespace To_do_list_wform
     {
 
         private TaskCard currentTask;
-        // Expose the current task so callers can assign it before showing the form
-        public TaskCard CurrentTask;
-       
-        public editArea(TaskCard task)
+        
+        public editArea()
         {
             InitializeComponent();
-            currentTask = task;
             guna2ImageButton1.ImageSize = new Size(48, 45);
 
             guna2ImageButton1.HoverState.ImageSize = new Size(48, 45);
@@ -30,10 +27,11 @@ namespace To_do_list_wform
         
 
 
+
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             currentTask.taskDesc.Text = guna2TextBox1.Text;
-            this.Close();   
+            
         }
 
         private void editArea_Load(object sender, EventArgs e)

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uqym1vnv5nI=",
+  "dgSpecHash": "5dM71/V6vWk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ILKIN.ZEYNALOV\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.8\\guna.ui2.winforms.2.0.4.8.nupkg.sha512",
-    "C:\\Users\\ILKIN.ZEYNALOV\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.8\\guna.ui2.winforms.2.0.4.8.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

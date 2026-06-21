@@ -13,12 +13,15 @@ namespace To_do_list_wform
 
         private TaskCard currentTask;
         // Expose the current task so callers can assign it before showing the form
-        public TaskCard CurrentTask;
-       
-        public editArea(TaskCard task)
+        public TaskCard CurrentTask
+        {
+            get => currentTask;
+            set => currentTask = value;
+        }
+        
+        public editArea()
         {
             InitializeComponent();
-            currentTask = task;
             guna2ImageButton1.ImageSize = new Size(48, 45);
 
             guna2ImageButton1.HoverState.ImageSize = new Size(48, 45);
@@ -32,8 +35,21 @@ namespace To_do_list_wform
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            currentTask.taskDesc.Text = guna2TextBox1.Text;
-            this.Close();   
+            // Guard against null reference if caller forgot to assign the task
+            if (currentTask != null)
+            {
+                currentTask.taskDesc.Text = guna2TextBox1.Text;
+                // Keep the TaskCard.RealTaskText in sync if used elsewhere
+                currentTask.RealTaskText = guna2TextBox1.Text;
+
+                // Indicate success to the caller and close the dialog
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("No task assigned to edit. Please report this issue.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void editArea_Load(object sender, EventArgs e)
