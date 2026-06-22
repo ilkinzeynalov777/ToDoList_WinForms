@@ -25,7 +25,7 @@ namespace To_do_list_wform
 
 
 
-        //START DATE TARIXI GIRMEK
+        
 
 
         private void guna2HtmlLabel5_Click(object sender, EventArgs e)
@@ -112,18 +112,20 @@ namespace To_do_list_wform
 
             // Position the form over the card
             Point cardLocation = this.PointToScreen(Point.Empty);
-            int xCorrection = cardLocation.X + 2;
-            int yCorrection = cardLocation.Y + 2;
+            int xCorrection = cardLocation.X;
+            int yCorrection = cardLocation.Y;
             editForm.Location = new Point(xCorrection, yCorrection);
 
-            editForm.Width = this.ClientSize.Width - 4;
-            editForm.Height = this.ClientSize.Height - 4;
+            editForm.Width = this.ClientSize.Width;
+            editForm.Height = this.ClientSize.Height;
 
             // If the user saved changes, update this card's text
             if (editForm.ShowDialog() == DialogResult.OK)
             {
+                
                 this.RealTaskText = editForm.guna2TextBox1.Text;
                 this.taskDesc.Text = this.RealTaskText;
+                this.taskDesc.Text = editForm.guna2TextBox1.Text;
             }
 
 

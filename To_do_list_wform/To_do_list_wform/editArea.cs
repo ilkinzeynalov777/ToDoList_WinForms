@@ -14,11 +14,11 @@ namespace To_do_list_wform
         private TaskCard currentTask;
         // Expose the current task so callers can assign it before showing the form
         public TaskCard CurrentTask;
-       
+
         public editArea(TaskCard task)
         {
             InitializeComponent();
-            currentTask = task;
+            CurrentTask = task;
             guna2ImageButton1.ImageSize = new Size(48, 45);
 
             guna2ImageButton1.HoverState.ImageSize = new Size(48, 45);
@@ -27,13 +27,22 @@ namespace To_do_list_wform
             this.KeyPreview = true;
         }
 
-        
+
 
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            currentTask.taskDesc.Text = guna2TextBox1.Text;
-            this.Close();   
+            if (guna2TextBox1.Text == null || guna2TextBox1.Text.Trim() == "")
+            {
+                MessageBox.Show("Please enter a task description.");
+            }
+            else if (guna2TextBox1 != null)
+            {
+                CurrentTask.RealTaskText = guna2TextBox1.Text;
+                CurrentTask.taskDesc.Text = guna2TextBox1.Text;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
 
         private void editArea_Load(object sender, EventArgs e)
@@ -65,6 +74,11 @@ namespace To_do_list_wform
             }
 
 
+
+        }
+
+        private void editMain_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
