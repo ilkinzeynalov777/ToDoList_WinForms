@@ -76,6 +76,7 @@
             // 
             username.BackColor = Color.FromArgb(26, 26, 46);
             username.BorderStyle = BorderStyle.FixedSingle;
+            username.ForeColor = SystemColors.Info;
             username.Location = new Point(57, 232);
             username.Multiline = true;
             username.Name = "username";
@@ -86,6 +87,7 @@
             // 
             password.BackColor = Color.FromArgb(26, 26, 46);
             password.BorderStyle = BorderStyle.FixedSingle;
+            password.ForeColor = SystemColors.Info;
             password.Location = new Point(57, 322);
             password.Multiline = true;
             password.Name = "password";
@@ -108,15 +110,17 @@
             sign.FlatAppearance.BorderSize = 0;
             sign.FlatStyle = FlatStyle.Flat;
             sign.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            sign.Location = new Point(125, 387);
+            sign.Location = new Point(135, 387);
             sign.Name = "sign";
             sign.Size = new Size(153, 39);
             sign.TabIndex = 6;
             sign.Text = "Sign In";
             sign.UseVisualStyleBackColor = false;
+            sign.Click += sign_Click;
             // 
             // loginForm
             // 
+            AcceptButton = sign;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(26, 26, 46);
