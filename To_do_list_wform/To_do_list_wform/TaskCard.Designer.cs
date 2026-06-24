@@ -102,7 +102,7 @@
             taskDesc.Anchor = AnchorStyles.None;
             taskDesc.BackColor = Color.Transparent;
             taskDesc.ForeColor = SystemColors.ButtonHighlight;
-            taskDesc.Location = new Point(259, 21);
+            taskDesc.Location = new Point(238, 21);
             taskDesc.Name = "taskDesc";
             taskDesc.Size = new Size(107, 17);
             taskDesc.TabIndex = 7;
@@ -136,7 +136,7 @@
             usernameText.Anchor = AnchorStyles.None;
             usernameText.BackColor = Color.Transparent;
             usernameText.ForeColor = SystemColors.ButtonHighlight;
-            usernameText.Location = new Point(68, 21);
+            usernameText.Location = new Point(103, 21);
             usernameText.Name = "usernameText";
             usernameText.Size = new Size(101, 17);
             usernameText.TabIndex = 6;
@@ -158,7 +158,7 @@
             // 
             finalDate.BackColor = Color.Transparent;
             finalDate.ForeColor = SystemColors.ButtonHighlight;
-            finalDate.Location = new Point(593, 21);
+            finalDate.Location = new Point(596, 21);
             finalDate.Name = "finalDate";
             finalDate.Size = new Size(53, 17);
             finalDate.TabIndex = 4;
@@ -191,7 +191,7 @@
             guna2CheckBox1.CheckedState.BorderRadius = 3;
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.Lime;
-            guna2CheckBox1.Location = new Point(14, 21);
+            guna2CheckBox1.Location = new Point(15, 24);
             guna2CheckBox1.Name = "guna2CheckBox1";
             guna2CheckBox1.Size = new Size(15, 14);
             guna2CheckBox1.TabIndex = 0;
@@ -217,14 +217,14 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel cardMain;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel usernameText;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel taskStatus;
         private Guna.UI2.WinForms.Guna2Button delete;
         public Guna.UI2.WinForms.Guna2HtmlLabel taskDesc;
         public Guna.UI2.WinForms.Guna2HtmlLabel finishDate;
         public Guna.UI2.WinForms.Guna2HtmlLabel finalDate;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public Guna.UI2.WinForms.Guna2HtmlLabel usernameText;
+        public Guna.UI2.WinForms.Guna2HtmlLabel taskStatus;
+        public Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
     }
 }

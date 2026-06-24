@@ -5,6 +5,12 @@ namespace To_do_list_wform
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
+        /// 
+
+        //global name variable for username
+        public static string CurrentUsername { get; set; } = "";
+
+
         [STAThread]
         static void Main()
         {
