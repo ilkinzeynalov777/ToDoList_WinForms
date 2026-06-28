@@ -26,9 +26,9 @@ namespace To_do_list_wform
 
             //connect to the database
             //at Home
-            //string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+            string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
             //at work
-            string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+            //string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
             //create a connection to the database
             string query = "SELECT COUNT(*) FROM dbo.Users where Username = @username AND PasswordHash = @password";
 
@@ -47,14 +47,16 @@ namespace To_do_list_wform
                         if(count > 0)
                         {
                             MessageBox.Show("Login successful","Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            //data reader with sql
+
+
+
+
+
                             Program.CurrentUsername = username.Text.Trim();
-
-
-
-
-
                             Form1 mainForm = new Form1();
                             mainForm.Show();
+                            mainForm.LoadTasksFromDatabase();
                             this.Hide();    
                         }
                         else

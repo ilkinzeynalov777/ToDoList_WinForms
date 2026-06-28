@@ -77,7 +77,7 @@ namespace To_do_list_wform
 
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
             Guna.UI2.WinForms.Guna2CheckBox clickedCheckBox = (Guna.UI2.WinForms.Guna2CheckBox)sender;
             var panel = clickedCheckBox.Parent;
             To_do_list_wform.TaskCard taskCard = panel.Parent as To_do_list_wform.TaskCard;

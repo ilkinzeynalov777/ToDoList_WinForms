@@ -8,7 +8,7 @@ namespace To_do_list_wform
     {
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string TaskFull { get; set; }
-        TaskCard tskSql = new TaskCard();
+        
 
         public Form1()
         {
@@ -17,23 +17,38 @@ namespace To_do_list_wform
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(richTextBox1.Text))
+            {
+                MessageBox.Show("Zehmet olmasa tapşırığı əlavə edin.");
+                return;
+            }
 
-            //------------------------------------------------------
-            //bu hissədə sql database-ə tapşırıq əlavə etmək üçün kod yazılır
-            //tasks add sql database
-            string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+            // ---- 1. Yeni TaskCard yarat və UI-ə əlavə et ----
+            TaskCard taskCard = new TaskCard();
 
-            //string query
-            string query = "INSERT INTO Tasks (Username, Description, StartDate,FinishDate,Status,IsCompleted) VALUES (@usernameText, @taskDesc, @finishDate , @finalDate,@taskStatus , @guna2CheckBox1)";
+            taskCard.RealTaskText = richTextBox1.Text;
+            TaskFull = richTextBox1.Text;
+            string shortTask = TaskFull;
 
-            //variables TascCard variables
-            string usernameText = tskSql.usernameText.Text;
-            string taskDesc = tskSql.taskDesc.Text;
-            string startDate = tskSql.finishDate.Text;  
-            string endDate = tskSql.finalDate.Text;
-            string status  = tskSql.taskStatus.Text;
-            string isCompleted = tskSql.guna2CheckBox1.Checked.ToString();
+            taskCard.usernameText.Text = Program.CurrentUsername;
 
+            if (TaskFull.Length > 20)
+            {
+                shortTask = TaskFull.Substring(0, 20) + "...";
+            }
+
+            taskCard.taskDesc.Text = shortTask;
+            flowPanel.Controls.Add(taskCard);
+            richTextBox1.Clear();
+
+            DateTime nowDate = DateTime.Now;
+            taskCard.finishDate.Text = nowDate.ToString("dd/MM/yyyy HH:mm");
+
+            // ---- 2. İndi BU taskCard-ı SQL-ə yaz ----
+            string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+
+            string query = "INSERT INTO Tasks (Username, Description, StartDate, FinishDate, Status, IsCompleted) " +
+                           "VALUES (@usernameText, @taskDesc, @startDate, @finalDate, @taskStatus, @isCompleted)";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -42,70 +57,65 @@ namespace To_do_list_wform
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@usernameText", usernameText);
-                        cmd.Parameters.AddWithValue("@taskDesc", taskDesc);
-                        cmd.Parameters.AddWithValue("@finishDate", startDate);
-                        cmd.Parameters.AddWithValue("@finalDate", endDate);
-                        cmd.Parameters.AddWithValue("@taskStatus", status);
-                        cmd.Parameters.AddWithValue("@guna2CheckBox1", false);
+                        cmd.Parameters.AddWithValue("@usernameText", taskCard.usernameText.Text);
+                        cmd.Parameters.AddWithValue("@taskDesc", taskCard.taskDesc.Text);
+                        cmd.Parameters.AddWithValue("@startDate", nowDate);
+                        cmd.Parameters.AddWithValue("@finalDate", DBNull.Value);
+                        cmd.Parameters.AddWithValue("@taskStatus", taskCard.taskStatus.Text);
+                        cmd.Parameters.AddWithValue("@isCompleted", taskCard.guna2CheckBox1.Checked);
+
+                        cmd.ExecuteNonQuery();
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-
-                    throw;
+                    MessageBox.Show("SQL Error: " + ex.Message);
                 }
             }
-
-
-            //-------------------------------------------------------------------------------
-
-
-
-
-
-
-
-            if (string.IsNullOrWhiteSpace(richTextBox1.Text))
-            {
-                MessageBox.Show("Zehmet olmasa tapşırığı əlavə edin.");
-                return;
-            }
-
-            TaskCard taskCard = new TaskCard();
-
-            taskCard.RealTaskText = richTextBox1.Text;
-            TaskFull = richTextBox1.Text;
-            string shortTask = TaskFull;
-            //username taskcard add 
-            taskCard.usernameText.Text = Program.CurrentUsername;
-
-
-            if (TaskFull.Length > 20)
-            {
-                shortTask = TaskFull.Substring(0, 20) + "...";
-            }
-
-            
-            taskCard.taskDesc.Text = shortTask;
-            flowPanel.Controls.Add(taskCard);
-            richTextBox1.Clear();   
-            
-            
-            DateTime nowDate = DateTime.Now;
-            taskCard.finishDate.Text = nowDate.ToString("dd/MM/yyyy HH:mm");
-
-           
-
-
-
-
-
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             //istifadəçinin yazdığı yerdə olan mətni ortalamağ
         }
+
+        public void LoadTasksFromDatabase()
+        {
+            string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+            string query = "SELECT Description, StartDate, FinishDate, Status, IsCompleted FROM Tasks WHERE Username = @username";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@username", Program.CurrentUsername);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                TaskCard taskCard = new TaskCard();
+                                taskCard.usernameText.Text = Program.CurrentUsername;
+                                taskCard.taskDesc.Text = reader["Description"].ToString();
+                                taskCard.finishDate.Text = Convert.ToDateTime(reader["StartDate"]).ToString("dd/MM/yyyy HH:mm");
+                                taskCard.taskStatus.Text = reader["Status"].ToString();
+                                taskCard.guna2CheckBox1.Checked = Convert.ToBoolean(reader["IsCompleted"]);
+
+                                flowPanel.Controls.Add(taskCard);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("SQL Error: " + ex.Message);
+                }
+            }
+        }
+
+
     }
 }
