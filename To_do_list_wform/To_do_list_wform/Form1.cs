@@ -8,7 +8,7 @@ namespace To_do_list_wform
     {
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string TaskFull { get; set; }
-        
+          
 
         public Form1()
         {
@@ -45,7 +45,10 @@ namespace To_do_list_wform
             taskCard.finishDate.Text = nowDate.ToString("dd/MM/yyyy HH:mm");
 
             // ---- 2. İndi BU taskCard-ı SQL-ə yaz ----
-            string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+            //at home
+            //string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+            //at work
+            string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
 
             string query = "INSERT INTO Tasks (Username, Description, StartDate, FinishDate, Status, IsCompleted) " +
                            "VALUES (@usernameText, @taskDesc, @startDate, @finalDate, @taskStatus, @isCompleted)";
@@ -58,7 +61,7 @@ namespace To_do_list_wform
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@usernameText", taskCard.usernameText.Text);
-                        cmd.Parameters.AddWithValue("@taskDesc", taskCard.taskDesc.Text);
+                        cmd.Parameters.AddWithValue("@taskDesc", taskCard.RealTaskText);
                         cmd.Parameters.AddWithValue("@startDate", nowDate);
                         cmd.Parameters.AddWithValue("@finalDate", DBNull.Value);
                         cmd.Parameters.AddWithValue("@taskStatus", taskCard.taskStatus.Text);
@@ -81,7 +84,10 @@ namespace To_do_list_wform
 
         public void LoadTasksFromDatabase()
         {
-            string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+            ////AT HOME
+            //string connectionString = @"Data Source=WIN-12MOQ9MUQPE\MSSQLSERVER02;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
+            //AT WORK
+            string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=ToDoListDb;Integrated Security=True;TrustServerCertificate=True";
             string query = "SELECT Description, StartDate, FinishDate, Status, IsCompleted FROM Tasks WHERE Username = @username";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -98,8 +104,20 @@ namespace To_do_list_wform
                             while (reader.Read())
                             {
                                 TaskCard taskCard = new TaskCard();
+                                taskCard.RealTaskText = reader["Description"].ToString();
                                 taskCard.usernameText.Text = Program.CurrentUsername;
-                                taskCard.taskDesc.Text = reader["Description"].ToString();
+                                //BURA ŞƏRT VERƏCEM Kİ ƏGƏR TASKIN DESCRIPTION-U 20-DƏN UZUNDURSA, O ZAMAN SUBSTRING ET, ƏKS HALDA BİRBAŞA YAZ
+                                if(reader["Description"].ToString().Length > 20)
+                                {
+                                    taskCard.taskDesc.Text = reader["Description"].ToString().Substring(0, 20) + "...";
+                                }
+                                else
+                                {
+                                    taskCard.taskDesc.Text = reader["Description"].ToString();
+                                }
+                            
+
+                                
                                 taskCard.finishDate.Text = Convert.ToDateTime(reader["StartDate"]).ToString("dd/MM/yyyy HH:mm");
                                 taskCard.taskStatus.Text = reader["Status"].ToString();
                                 taskCard.guna2CheckBox1.Checked = Convert.ToBoolean(reader["IsCompleted"]);

@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    "net10.0-windows7.0": {
+    "net10.0-windows": {
       "BCrypt.Net-Next/4.2.0": {
         "type": "package",
         "compile": {
@@ -374,12 +374,12 @@
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -1081,31 +1081,26 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net10.0-windows7.0": [
+    "net10.0-windows": [
       "BCrypt.Net-Next >= 4.2.0",
       "Guna.UI2.WinForms >= 2.0.4.8",
       "Microsoft.Data.SqlClient >= 7.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ILKIN.ZEYNALOV\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
+      "projectUniqueName": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
       "projectName": "To_do_list_wform",
-      "projectPath": "C:\\Users\\User\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\obj\\",
+      "projectPath": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\To_do_list_wform.csproj",
+      "packagesPath": "C:\\Users\\ILKIN.ZEYNALOV\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ILKIN.ZEYNALOV\\Desktop\\ToDoList_WinForms\\To_do_list_wform\\To_do_list_wform\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ILKIN.ZEYNALOV\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1116,7 +1111,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net10.0-windows7.0": {
+        "net10.0-windows": {
+          "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "projectReferences": {}
         }
@@ -1131,10 +1127,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
-      "net10.0-windows7.0": {
+      "net10.0-windows": {
+        "framework": "net10.0-windows7.0",
         "targetAlias": "net10.0-windows",
         "dependencies": {
           "BCrypt.Net-Next": {
@@ -1169,7 +1166,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

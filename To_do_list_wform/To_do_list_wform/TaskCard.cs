@@ -15,6 +15,9 @@ namespace To_do_list_wform
         private object guna2;
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string RealTaskText { get; set; }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public int TaskId { get; set; } // Add this property to hold the task ID
         public TaskCard()
         {
 
@@ -103,7 +106,6 @@ namespace To_do_list_wform
         {
             // Open the edit form and pass this TaskCard as the current task
             editArea editForm = new editArea(this);
-            editForm.CurrentTask = this;
             editForm.guna2TextBox1.Text = this.RealTaskText;
 
             // Properties
